@@ -205,12 +205,12 @@ async function copyResult() {
     await navigator.clipboard.writeText(text);
     elements.copyBtn.textContent = "已复制";
     window.setTimeout(() => {
-      elements.copyBtn.textContent = "复制结果文案";
+      elements.copyBtn.textContent = "复制结果";
     }, 1600);
   } catch (error) {
     elements.copyBtn.textContent = "复制失败";
     window.setTimeout(() => {
-      elements.copyBtn.textContent = "复制结果文案";
+      elements.copyBtn.textContent = "复制结果";
     }, 1600);
   }
 }
