@@ -2,9 +2,9 @@ const quiz = window.QUIZ_DATA;
 
 const EGG_STAGES = [
   "./assets/egg-progress-1-cut.png",
-  "./assets/egg-progress-1-cut.png",
   "./assets/egg-progress-2-cut.png",
   "./assets/egg-progress-3-cut.png",
+  "./assets/egg-progress-4-cut.png",
   "./assets/egg-progress-4-cut.png"
 ];
 
@@ -106,6 +106,13 @@ const elements = {
 };
 
 const scoringProfile = buildScoringProfile();
+
+// Preload egg states so the progress image doesn't appear to switch randomly
+// while the browser is still fetching the next sprite.
+EGG_STAGES.forEach((src) => {
+  const image = new Image();
+  image.src = src;
+});
 
 function showScreen(target) {
   Object.values(screens).forEach((screen) => {
