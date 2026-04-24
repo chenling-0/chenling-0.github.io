@@ -167,7 +167,7 @@ body {
 
 .lay-egg-zone {
   position: absolute;
-  left: calc(50% - 4px);
+  left: calc(50% - 34px);
   bottom: 18px;
   width: 96px;
   height: 120px;
@@ -196,7 +196,7 @@ body {
 }
 
 .intro-copy {
-  padding: 12px 28px 40px;
+  padding: 2px 28px 40px;
   text-align: center;
 }
 
@@ -219,11 +219,11 @@ body {
 }
 
 .pixel-title {
-  font-size: clamp(3.8rem, 10vw, 6rem);
+  font-size: clamp(4.4rem, 11.6vw, 6.8rem);
   line-height: 1;
   letter-spacing: 0.08em;
   color: #6c4022;
-  margin-top: -10px;
+  margin-top: -24px;
 }
 
 .sub-title {
@@ -573,20 +573,20 @@ body {
   0% {
     transform: translateX(-220px) translateY(0);
   }
-  26% {
+  22% {
     transform: translateX(-122px) translateY(-6px);
   }
-  44% {
-    transform: translateX(-8px) translateY(0);
+  46% {
+    transform: translateX(110px) translateY(0);
   }
-  58% {
-    transform: translateX(-8px) translateY(8px);
+  60% {
+    transform: translateX(228px) translateY(0);
   }
-  74% {
-    transform: translateX(120px) translateY(0);
+  72% {
+    transform: translateX(384px) translateY(8px);
   }
   100% {
-    transform: translateX(520px) translateY(0);
+    transform: translateX(620px) translateY(0);
   }
 }
 
@@ -594,55 +594,53 @@ body {
   0% {
     transform: translateX(-220px) scaleX(1);
   }
-  26% {
+  22% {
     transform: translateX(-122px) scaleX(0.95);
   }
-  44%,
-  58% {
-    transform: translateX(-8px) scaleX(1);
+  46% {
+    transform: translateX(110px) scaleX(1);
   }
-  74% {
-    transform: translateX(120px) scaleX(1);
+  60% {
+    transform: translateX(228px) scaleX(1);
+  }
+  72% {
+    transform: translateX(384px) scaleX(1);
   }
   100% {
-    transform: translateX(520px) scaleX(1);
+    transform: translateX(620px) scaleX(1);
   }
 }
 
 @keyframes egg-lay {
   0%,
-  42% {
-    opacity: 0;
-    transform: translateX(0) translateY(18px) scale(0.84);
-  }
-  56% {
-    opacity: 1;
-    transform: translateX(0) translateY(26px) scale(0.78);
-  }
   64% {
-    opacity: 1;
-    transform: translateX(-20px) translateY(0) scale(1);
+    opacity: 0;
+    transform: translateX(-16px) translateY(18px) scale(0.84);
   }
-  76% {
+  72% {
     opacity: 1;
-    transform: translateX(-20px) translateY(0) scale(1);
+    transform: translateX(-16px) translateY(24px) scale(0.8);
+  }
+  80% {
+    opacity: 1;
+    transform: translateX(-16px) translateY(0) scale(1);
   }
   100% {
     opacity: 1;
-    transform: translateX(-20px) translateY(0) scale(1);
+    transform: translateX(-16px) translateY(0) scale(1);
   }
 }
 
 @keyframes egg-shadow-appear {
   0%,
-  46% {
+  66% {
     opacity: 0;
-    transform: translateX(0);
+    transform: translateX(-16px);
   }
-  62%,
+  74%,
   100% {
     opacity: 1;
-    transform: translateX(-20px);
+    transform: translateX(-16px);
   }
 }
 
@@ -705,7 +703,7 @@ body {
 
   .intro-copy {
     margin-top: auto;
-    padding-top: 48px;
+    padding-top: 36px;
     padding-bottom: 74px;
   }
 
